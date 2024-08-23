@@ -1,0 +1,487 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
+  .img_castelo {
+    position: absolute;
+    bottom: -4%;
+    left: 13%;
+    transform: translateX(-50%);
+    width: 40%;
+    z-index: 2;
+    
+  }
+  .history_div p {
+    font-family: 'Poppins', sans-serif; /* Aplicar a fonte Poppins */
+    font-size: 18px; 
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+    color: #6b4132; 
+    text-align: justify;
+} 
+#historia p:first-of-type {
+  font-family: 'Rouge Script', cursive; 
+  font-size: 5em; 
+  font-weight: normal; 
+  color: #857e2a; 
+  margin-bottom: 5%;
+  margin-top: 0;
+  
+}
+
+  .img_chao {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  
+  }
+  .img_cloud {
+    position: absolute;
+    bottom: 60%;
+    left: -30%;
+    width: 23%;
+    animation: moveCloud 20s linear infinite 10s;
+
+  }
+  .img_cloud2 {
+    position: absolute;
+    bottom: 65%;
+    left: -30%;
+    width: 25%;
+    animation: moveCloud2 20s linear infinite;
+
+  }
+  .history {
+    position: absolute;
+    top: 13%;
+    left:40%;
+    width: 50%; 
+    max-height: 70%;
+    overflow: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    line-height: 1.2;
+
+    
+}
+::-webkit-scrollbar {
+  width: 5px;
+  margin-top: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da trilha da barra de rolagem */
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #857e2a;
+  border-radius: 10px; 
+}
+
+.mario{
+
+  position: absolute;
+  bottom: 5%;
+  width: 97px;
+  animation: runAndJump 10s linear infinite;
+  
+
+}
+.back-button {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  z-index: 3;
+}
+
+.back-button img {
+  position: absolute;
+  width: 40px; 
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.back-button img:hover {
+  opacity: 0.8; 
+}
+
+
+
+  @keyframes moveCloud {
+    0% { left: -30%; }
+    100% { left: 100%; }
+  }
+  
+  @keyframes moveCloud2 {
+    0% { left: -30%; }
+    100% { left: 100%; }
+  }
+
+  @keyframes runAndJump {
+    0% {
+      left: -30%;
+      bottom: 5%;
+    }
+    5% {
+      bottom: 90px;
+    }
+    10% {
+      bottom: 5%; /* Sobe para o pico do salto */
+    }
+    15% {
+      bottom: 90px;
+    }
+    20% {
+  
+      bottom: 5%; /* Desce ao chão */
+    }
+    25% {
+      bottom: 90px;
+    }
+    30% {
+      bottom: 5%; /* Sobe novamente */
+    }
+    35% {
+      bottom: 90px;
+    }
+    40% {
+      bottom: 5%; /* Termina o movimento à direita e ao chão */
+    }
+    45% {
+      bottom: 90px;
+    }
+    50% {
+    
+      bottom: 5%;
+    }
+    55% {
+      bottom: 90px;
+    }
+    60% {
+      bottom: 5%; /* Sobe para o pico do salto */
+    }
+    65% {
+      bottom: 90px;
+    }
+    70% {
+   
+      bottom: 5%; /* Desce ao chão */
+    }
+    75% {
+      bottom: 90px;
+    }
+    80% {
+      bottom: 5%; /* Sobe novamente */
+    }
+    85% {
+      bottom: 90px;
+    }
+    90% {
+      bottom: 5%; /* Sobe novamente */
+    }
+    95%{
+      bottom: 90px;
+    }
+    100% {
+      left: 100%;
+      bottom: 5%; /* Termina o movimento à direita e ao chão */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .img_castelo {
+      bottom: 0%;
+      left: 12%;
+      transform: translateX(-50%);
+      width: 50%;
+      z-index: 2;
+      
+    }
+    .mario{
+  
+      position: absolute;
+      bottom: 5%;
+      width: 70px;
+      animation: runAndJump 10s linear infinite;
+      
+    
+    }
+    .history_div p {
+      font-family: 'Poppins', sans-serif; /* Aplicar a fonte Poppins */
+      font-size: 16px; 
+      line-height: 1.5; 
+      margin-bottom: 10px; 
+      color: #6b4132; 
+      text-align: justify;
+  }
+    #historia p:first-of-type {
+      font-family: 'Rouge Script', cursive; 
+      font-size: 3em; 
+      font-weight: normal; 
+      color: #857e2a; 
+      
+    }
+    .history {
+      position: absolute;
+      top: 3%;
+      left: 7%;
+      width: 85%; 
+      max-height: 70%;
+      overflow: auto;
+      padding: 1rem;
+      box-sizing: border-box;
+      line-height: 1.2;
+  
+      
+  }
+  .history_div p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+    color: #6b4132; 
+    text-align: justify;
+}
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 3;
+  }
+
+  .back-button img {
+    width: 30px; 
+    height: auto;
+    transition: opacity 0.3s;
+  }
+
+  .back-button img:hover {
+    opacity: 0.8; 
+  }
+  
+  }    
+
+
+
+  /* From Uiverse.io by Na3ar-17 */ 
+.container {
+  position: absolute;
+  margin-top: 10%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 80%;
+} 
+
+.label {
+  background-color: transparent;
+  border: 2px solid #6b4132;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 5px;
+  position: relative;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  transition: all 0.4s ease;
+  border-radius: 100%;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.label .input {
+  display: none;
+}
+
+.label .title {
+  font-size: 15px;
+  color: #151313;
+  transition: all 0.4s ease;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+}
+
+.label .title:last-child {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.label .circle {
+  height: 20px;
+  width: 20px;
+  margin-left: 2px;
+  border-radius: 50%;
+  background-color: #6b4132;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.label .circle .icon {
+  color: #fff;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.label .circle .square {
+  aspect-ratio: 1;
+  width: 10px;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.label .circle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #3333a8;
+  width: 100%;
+  height: 0;
+  transition: all 0.4s ease;
+}
+
+.label:has(.input:checked) {
+  width: 57px;
+  animation: installed 0.4s ease 3.5s forwards;
+}
+
+.label:has(.input:checked)::before {
+  animation: rotate 3s ease-in-out 0.4s forwards;
+}
+
+.label .input:checked + .circle {
+  animation:
+    pulse 1s forwards,
+    circleDelete 0.2s ease 3.5s forwards;
+  rotate: 180deg;
+}
+
+.label .input:checked + .circle::before {
+  animation: installing 3s ease-in-out forwards;
+}
+
+.label .input:checked + .circle .icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.label .input:checked ~ .circle .square {
+  opacity: 1;
+  visibility: visible;
+}
+
+.label .input:checked ~ .title {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.label .input:checked ~ .title:last-child {
+  animation: showInstalledMessage 0.4s ease 3.5s forwards;
+}
+
+@keyframes pulse {
+  0% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    scale: 1;
+    box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+  }
+  100% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes installing {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg) translate(27px) rotate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    transform: rotate(270deg) translate(27px) rotate(270deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes installed {
+  100% {
+    width: 100px;
+    border-color: rgb(35, 174, 35);
+  }
+}
+
+@keyframes circleDelete {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes showInstalledMessage {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    right: 56px;
+  }
+}

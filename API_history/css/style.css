@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfaf0;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+.img_casa {
+  position: absolute;
+  bottom: 2%;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 40%;
+  z-index: 2;
+  
+}
+.img_chao {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+.img_flor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  z-index: -1;
+}
+.img_cloud {
+  position: absolute;
+  bottom: 45%;
+  left: -30%;
+  width: 25%;
+  animation: moveCloud 20s linear infinite 12s;
+}
+.img_cloud2 {
+  position: absolute;
+  bottom: 60%;
+  left: -30%;
+  width: 30%;
+  animation: moveCloud2 20s linear infinite;
+}
+.img_logo{
+  position: absolute;
+  right: 8%;
+  width: 60%;
+  bottom: 6%;
+}
+.img_letra{
+  position: absolute;
+  right: 13%;
+  width: 50%;
+  top: 3%;
+  cursor: pointer;
+  z-index: 3;
+}
+.img_letra {
+  position: absolute;
+  right: 13%;
+  width: 50%;
+  top: 47%;
+  cursor: pointer;
+}
+
+
+@keyframes moveCloud {
+  0% { left: -30%; }
+  100% { left: 100%; }
+}
+
+@keyframes moveCloud2 {
+  0% { left: -30%; }
+  100% { left: 100%; }
+}
+
+@media (max-width: 768px) {
+  .img_logo, .img_letra {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+  }
+
+  .img_logo {
+      bottom: 40%;
+      width: 80%;
+  }
+
+  .img_letra {
+      top: 42%;
+      width: 80%;
+  }
+}

@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    background-color: #fdfaf0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.livro {
+    position: absolute;
+    left: 12%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    width: 25%;
+    z-index: 2;
+}
+
+.chao {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+}
+
+.maquina {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    z-index: -1;
+}
+
+.tinta {
+    position: absolute;
+    right: 60%;
+    bottom: 0%;
+    width: 20%;
+    z-index: 2;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+}   
+
+.formu {
+    position: absolute;
+    left: 15%;
+    top: 0%;
+    transform: translateX(-50%);
+    width: 25%;
+    z-index: 2;
+}
+
+.pal{
+    position: absolute;
+    left: 36.5%;
+    z-index: 1;
+}
+
+.pal2 {
+    position: absolute;
+    left: 49.7%;
+    transform: translateX(-27%);
+    transition: bottom 1s linear, opacity 1s linear; 
+    cursor: pointer;
+    z-index: 1;
+} 
+
+.perc {
+    position: relative;
+    width: 800px;
+    height: 400px; 
+    border: #94614b solid 2px;
+    left: 40%;
+    top: 5%;
+    background-color: #e6d2b3;
+    overflow-y: scroll; 
+}
+
+.perso {
+    display: none; 
+    max-width: 60%; 
+}
+
+#form-container {
+    display: none; 
+    position: absolute;
+    top: 25%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; 
+    background-color: #e6d2b3;
+} 
+
+/* General container style */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #4b2a13;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Form groups side by side */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Input fields */
+input[type="text"] {
+    padding: 0 0 5px 0;
+    margin: 4%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #3e230f;
+    font-size: 14px;
+    background-color: #e6d2b3;
+}
+
+/* Adjust input width to fill the container */
+.form-group input {
+    width:100%;
+}
+
+/* Button */
+#submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4b2a13;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#submit-button:hover {
+    background-color: #3e230f;
+}
+.button_form{
+
+    margin-bottom: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    margin-top: 15px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo da trilha da barra de rolagem */
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #3e230f;
+    border-radius: 10px; 
+  }
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .formu {
+        display: none; /* Hide the 'formu' image on mobile */
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fdfaf0;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pal{
+        position: absolute;
+        left: 2%;
+        z-index: 1;
+        width: 480px;
+        top: 5%;
+        height: 40px;
+    }
+    
+    .pal2 {
+        position: absolute; 
+        left: 28%;
+        width: 480px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .perc {
+        width: 87%;
+        left: 0;
+        top: 7%;
+        border: none;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #form-container {
+        display: block; 
+        position: relative;
+        padding-right: 5%;
+        width: 85%; 
+     
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+    .perso {
+        display: none; 
+        max-width: 80%; 
+    }
+    .tinta {
+        position: absolute;
+        right: 55%;
+        bottom: 0%;
+        width: 30%;
+        z-index: 2;
+        animation: bounce 1.5s infinite;
+        cursor: pointer;
+    }  
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+  
