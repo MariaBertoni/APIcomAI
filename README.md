@@ -52,5 +52,5 @@ Contribuições são bem-vindas. Sinta-se à vontade para fazer um fork do repos
 # Contato
 
 Para mais informações, entre em contato com:
-- [Instrutor de Programação Web Front-End]: Sesi Senai Itapeva
-- [Instrutor de Programação Web Back-End]: Sesi Senai Itapeva
+- Rafael Ribas: Sesi Senai Itapeva
+- João Paulo Lepnski: Sesi Senai Itapeva
